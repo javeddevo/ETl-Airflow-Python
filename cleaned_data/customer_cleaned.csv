@@ -1,0 +1,11 @@
+CustomerID,First_Name,Last_Name,Phone_Number,Paying_Customer,Do_Not_Contact
+1001,Frodo,Baggins,1235455421,Y,N
+1005,Jon,Snow,8766783469,Y,N
+1008,Sherlock,Holmes,8766783469,N,N
+1010,Peter,Parker,1235455421,Y,N
+1013,Don,Draper,1235432345,Y,N
+1014,Leslie,Knope,8766783469,Y,N
+1015,Toby,Flenderson,3047622467,N,N
+1016,Ron,Weasley,1235455421,N,N
+1017,Michael ,Scott,1236439775,Y,N
+1020,Anakin,Skywalker,8766783469,Y,N

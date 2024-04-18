@@ -1,0 +1,11 @@
+
+{"input_file": "./raw_data/customer.csv",
+"output_file": "./cleaned_data/customer_cleaned.csv",
+"db":"test",
+"host":"host.docker.internal",
+"port":"5432",
+"user":"airflow",
+"password":"airflow",
+"server":"postgres",
+"table":"etl"
+}
