@@ -25,7 +25,6 @@ For further information and troubleshooting, refer to the project documentation 
 
 """
 
-
 from airflow.operators.python import PythonOperator
 from airflow.operators.bash import BashOperator
 from airflow import DAG
@@ -56,7 +55,6 @@ task3 = PythonOperator(task_id='create_table_in_postgres',
 task4=PythonOperator(task_id="check_csv_file",
                      python_callable=read_file,
                      dag=data_ingestion_dag)
-
 task5 = PythonOperator(task_id='copy_table_to_postgres',
                        python_callable=dump_data,
                        dag=data_ingestion_dag)
