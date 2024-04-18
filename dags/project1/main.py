@@ -41,23 +41,23 @@ data_ingestion_dag = DAG(dag_id='data-ingestion',
                          start_date=datetime(2024,1,4))
 
 
-task0 = PythonOperator(task_id='Install-dependencies',
+task0 = PythonOperator(task_id='install_dependencies',
                        python_callable=install_dependencies,
                        dag=data_ingestion_dag)
-task1 = PythonOperator(task_id='data-cleaning',
+task1 = PythonOperator(task_id='data_cleaning',
                        python_callable=cleaning ,
                        dag=data_ingestion_dag)
-task2 = PythonOperator(task_id='Connect-to-postgres_db',
+task2 = PythonOperator(task_id='connect_to_postgres_db',
                        python_callable=connect_to_db,
                        dag=data_ingestion_dag)
-task3 = PythonOperator(task_id='Create-Table-In_Postgres',
+task3 = PythonOperator(task_id='create_table_in_postgres',
                        python_callable=create_table_db,
                        dag=data_ingestion_dag)
-task4=PythonOperator(task_id="check-csv-file",
+task4=PythonOperator(task_id="check_csv_file",
                      python_callable=read_file,
                      dag=data_ingestion_dag)
 
-task5 = PythonOperator(task_id='Copy-csv-to-postgres_table',
+task5 = PythonOperator(task_id='copy_table_to_postgres',
                        python_callable=dump_data,
                        dag=data_ingestion_dag)
 
