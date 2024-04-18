@@ -3,7 +3,7 @@ ETL Project Documentation
 
 Author: Javeed
 Email:javed30ma@gmail.com
-Suppoter: Sahithi
+Supporter: Sahithi
 Project: ETL (Extract, Transform, Load)
 
 Description:
